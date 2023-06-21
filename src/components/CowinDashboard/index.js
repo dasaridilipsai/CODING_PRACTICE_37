@@ -47,7 +47,7 @@ class CowinDashboard extends Component {
           age: range.age,
           count: range.count,
         })),
-        vaccinationByGender: fetchedData.Vaccination_by_gender.map(
+        vaccinationByGender: fetchedData.vaccination_by_gender.map(
           genderType => ({
             gender: genderType.gender,
             count: genderType.count,
@@ -106,7 +106,7 @@ class CowinDashboard extends Component {
         return this.renderVaccinationStats()
       case apiStatusConstants.failure:
         return this.renderFailureView()
-      case apiStatusConstants.inprogress:
+      case apiStatusConstants.inProgress:
         return this.renderLoadingView()
       default:
         return null
