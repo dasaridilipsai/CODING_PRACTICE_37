@@ -10,7 +10,7 @@ const VaccinationCoverage = props => {
     }
     return number.toString()
   }
-  const {VaccinationCoverageDetails} = props
+  const {vaccinationCoverageDetails} = props
 
   return (
     <div className="vaccination-by-coverage-container">
@@ -23,7 +23,7 @@ const VaccinationCoverage = props => {
       >
         <XAxis
           dataKey="vaccineDate"
-          tick={{stroke: '#6c757d', strokeWidth: 15, fontFamily: 'Roboto'}}
+          tick={{stroke: '#6c757d', strokeWidth: 1, fontSize: 15, fontFamily: 'Roboto'}}
         />
         <YAxis
           tickFormatter={dataFormatter}
